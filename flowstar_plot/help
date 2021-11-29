@@ -1,0 +1,24 @@
+1. GMP Library
+    sudo apt-get install libgmp3-dev
+
+2. MPFR Library
+    sudo ./config
+    sudo make
+    sudo make check
+    sudo make install
+
+3. GNU Scientific Library
+    sudo apt-get install libgsl2
+    sudo apt-get install libgsl0-dev
+
+4. GNU Linear Programming Kit
+    sudo apt-get install libglpk-dev
+
+5. Bison and Flex
+    sudo apt-get install flex bison
+
+6. gnu plot
+    sudo apt-get install gnuplot5
+
+6. compile
+    sudo make

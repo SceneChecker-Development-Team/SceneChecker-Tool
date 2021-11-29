@@ -1,0 +1,9 @@
+{
+	"vertex":["Default"],
+	"edge":[],
+	"variables":["x","y","z"],
+	"guards":[],
+	"initialSet":[[14.0, 14.0, 36.0],[15.0, 15.0, 37.0]],
+	"timeHorizon":5.0,
+	"directory":"examples/lorentz"
+}

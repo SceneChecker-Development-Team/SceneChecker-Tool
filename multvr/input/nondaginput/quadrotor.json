@@ -1,0 +1,24 @@
+{
+  "vertex": [
+    "[-4; -4; 4; -4]"
+  ],
+  "variables": [
+    "x",
+    "y",
+    "theta"
+  ],
+  "initialSet": [
+    [
+      -4.5,
+      -4.5,
+      0.9
+    ],
+    [
+      -4.4,
+      -4.4,
+      0.91
+    ]
+  ],
+  "timeHorizon": 0.2,
+  "directory": "multvr/examples/NNquadrotor"
+}

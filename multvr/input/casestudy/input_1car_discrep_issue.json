@@ -1,0 +1,11 @@
+{
+	"vertex":["TurnRight"],
+	"variables":["car1_x", "car1_y", "car1_vx", "car1_vy"],
+	"edge": [],
+	"guards":[],
+	"resets":[],
+	"initialSet":[[-3.0,-1,0.0,1.0], [-3.0,1.0,0.0,1.0]],
+	"timeHorizon":30.0,
+	"unsafeSet": "",
+	"directory":"examples/cars"
+}

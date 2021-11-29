@@ -1,0 +1,51 @@
+continuous reachability
+    {
+        state var x, y, z, vx, vy, vz, xref, yref, zref, xi, yi, zi, t
+
+        setting
+        {
+            fixed steps 0.001
+            time 3.0
+            remainder estimation 1e-2
+            identity precondition
+            gnuplot interval x,y
+            adaptive orders {min 4,max 8}
+            cutoff 1e-12
+            precision 53
+            output flowstar_tube
+            print off
+        }
+
+        nonpoly ode {20}
+        {
+            x' = vx
+                y' = vy
+                z' = vz
+                vx' = 9.81 * sin(1*(xref - x) + 1*(0.0-vx) + 1*xi)/cos(1*(xref - x) + 1*(0.0-vx) + 1*xi)
+                vy' = -9.81 * sin(-(1*(yref - y) + 1*(1.0-vy) + 1*yi))/cos(-(1*(yref - y) + 1*(1.0-vy) + 1*yi))
+                vz' = 10*(zref - z) + 10*(0.0-vz) + 1*zi - 9.81
+                xref' = 0.0
+                yref' = 1.0
+                zref' = 0.0
+                xi' = xref - x
+                yi' = yref - y
+                zi' = zref - z
+                t' = 1
+        }
+        init
+        {
+            x in [-0.07071067811865482,0.07071067811865418]
+            y in [-3.141421356237228,-2.9999999999999187]
+            z in [-0.1,0.1]
+            vx in [-0.007778174593052023,0.007778174593052023]
+            vy in [-0.007778174593052023,0.007778174593052023]
+            vz in [-0.01,0.01]
+            xref in [0,0]
+            yref in [-3,-3]
+            zref in [0,0]
+            xi in [0,0]
+            yi in [0,0]
+            zi in [0,0]
+            t in [0,0]
+        }
+    }
